@@ -1,7 +1,6 @@
 # aae final project
-
+##### Copula presence/absence counter
 African American English (Spring 2016), Professor Renée Blake
-Copula presence/absence counter
 
 ###TO-DO
 
