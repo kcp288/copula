@@ -1,5 +1,5 @@
 # AAE final project
-#### Copula presence/absence counter
+### Copula presence/absence counter
 African American English (Spring 2016), Professor Renée Blake
 
 ### Background
@@ -11,8 +11,8 @@ Copula absence is a grammatical feature of African American English, denoted by 
 - Forms 'are' and 'is' ("We (are) inside.")
   - Absence of 'are' is more common than 'is'
 - Absence can occur after
-  -Pronoun ("he", "she", "they", "we")
-  -Noun ("Daniel", "people")
+  - Pronoun ("he", "she", "they", "we")
+  - Noun ("Daniel", "people")
   - Absence after Pronoun is more common than after Noun
 - Absence can occur before
   - **Most common absence** occurs before present progressive of 'to go': 'gonna', 'going to', 'gon' ("She (is) gonna be here soon.")
@@ -38,4 +38,4 @@ Based on *Rickford & Rickford, Chapter 7 (2000)*.
 Currently checking for presence or absence only, in positions after adjectives and nouns.
 
 - Encode data about 'is' vs 'are' deletion, following pronoun vs following noun, preceding adjective, noun, locative, gerund
-- Exclude cases of pronounc before non-copular situations (PRP + IN, for example)
+- Exclude cases of pronouns/nouns before non-copular situations (PRP + IN, for example)
