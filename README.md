@@ -9,17 +9,17 @@ Copula absence is a grammatical feature of African American English, denoted by 
 
 **Absence**
 - Forms 'are' and 'is' ("We (are) inside.")
-..- Absence of 'are' is more common than 'is'
+  - Absence of 'are' is more common than 'is'
 - Absence can occur after
-..-Pronoun ("he", "she", "they", "we")
-..-Noun ("Daniel", "people")
-..- Absence after Pronoun is more common than after Noun
+  -Pronoun ("he", "she", "they", "we")
+  -Noun ("Daniel", "people")
+  - Absence after Pronoun is more common than after Noun
 - Absence can occur before
-..- **Most common absence** occurs before present progressive of 'to go': 'gonna', 'going to', 'gon' ("She (is) gonna be here soon.")
-..- Adjective ("People (are) crazy.")
-..- Noun ("She (is) a writer.")
-..- Gerund: verb ending in -ing ("He (is) walking.")
-..- Locative: any preposition ("They (are) in the store.")
+  - **Most common absence** occurs before present progressive of 'to go': 'gonna', 'going to', 'gon' ("She (is) gonna be here soon.")
+  - Adjective ("People (are) crazy.")
+  - Noun ("She (is) a writer.")
+  - Gerund: verb ending in -ing ("He (is) walking.")
+  - Locative: any preposition ("They (are) in the store.")
 
 
 **Obligatory Presence**
