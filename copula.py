@@ -1,6 +1,7 @@
 import nltk
 
 copula_list = []
+sentences = []
 
 def get_pos(token):
   word = token[0]
@@ -9,21 +10,26 @@ def get_pos(token):
 
 def print_copula(copula_list):
   total = len(copula_list)
+
+  if (total < 1): return
+
   present = 0
   absent = 0
 
   for i in copula_list:
     if (i[0] == 0):
       present = present + 1
-    if (i[0] == 1):
+    elif (i[0] == 1):
       absent = absent + 1
+    else:
+      continue
 
-  present_per = float(present)/total
-  absent_per = float(absent)/total
+  present_per = float(present)/total * 100
+  absent_per = float(absent)/total * 100
 
-  print 'Total copula spaces:\t' + str(total) + '\n' + \
-  'Present:\t' + str(present) + '/' + str(total) + '\t (' + str(present_per) + '% of total)\n' + \
-  'Absent:\t' + str(absent) + '/' + str(total) + '\t (' + str(absent_per) + '% of total)\n'
+  print '\nTotal copula spaces:\t' + str(total) + '\n' + \
+  'Present:\t' + str(present) + '/' + str(total) + '\t (' + "{0:.2f}".format(present_per) + '% of total)\n' + \
+  'Absent:\t' + str(absent) + '/' + str(total) + '\t (' + "{0:.2f}".format(absent_per) + '% of total)\n'
 
 def copula(user_in):
   
@@ -47,7 +53,7 @@ def copula(user_in):
   for i,tup in enumerate(tagged):
     try:
       copula = [0,0,0,0]
-
+    
       word, pos = get_pos(tup)
 
       # Eliminate cases
@@ -56,21 +62,19 @@ def copula(user_in):
         # Not first person "am"
         # Not infinitive 'be'
         # Not ain't
-      '''
+      
       if (pos == 'PRP') or (pos == "NN") or (pos == "NNS") or (pos == "NNP"):
         # Not sentence final
         # TODO: Check period
-        if tagged[i+1]:
-          # Check first person
-          if tagged[i+1] == 'AM': 
+        try:
+          next = tagged[i+1]
+          next_word = next[0]
+          if next_word == 'AM': 
             print "First person"
             break
-          else:
-            continue
-        else: 
-          print "Word final"
-          break
-      '''
+        except IndexError:
+          pass
+    
 
       # Following a PRONOUN
       if (pos == 'PRP'):
@@ -84,6 +88,10 @@ def copula(user_in):
           else:
             copula[0] = 1
 
+        copula_list.append(copula)
+        print_copula(copula_list)
+
+      
       # Following a NOUN (less likely) 
       if (pos == "NN") or (pos == "NNS") or (pos == "NNP"):
         if tagged[i+1]:    
@@ -93,14 +101,23 @@ def copula(user_in):
             copula[0] = 0
           else:
             copula[0] = 1
+        copula_list.append(copula)
+        print_copula(copula_list)
 
-      copula_list.append(copula)
+      
     except IndexError:
       pass
   # print tagged
   # print "Copula presence: " + str(copula) + " | Copula absence: " + str(copula_null)
-  print tagged
-  print_copula(copula_list)
+  sentences.append(tagged)
+  pretty_print(sentences)
+
+  #print_copula(copula_list)
+
+def pretty_print(arr):
+  for i in arr:
+    print i
+  print ''
 
 def main():
   cont = True
@@ -112,7 +129,14 @@ def main():
     ask = raw_input("Continue? (Y/N) ")
     if (ask.upper() == "N"):
       cont = False
-    else: continue
+    else:
+      clear = raw_input("Clear? (Y/N) ")
+      if (clear.upper() == "Y"):
+
+        copula_list = []
+        sentences = []
+        print copula_list, sentences
+      else: continue
 
   print "Done!"
 
