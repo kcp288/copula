@@ -20,6 +20,7 @@ Copula absence is a grammatical feature of African American English, denoted by 
   - Noun ("She (is) a writer.")
   - Gerund: verb ending in -ing ("He (is) walking.")
   - Locative: any preposition ("They (are) in the store.")
+  - Frequency is as follows (most to least likely): 'Gonna' > verb + ing > Adjective/Locative > Noun
 
 
 **Obligatory Presence**

@@ -3,11 +3,13 @@ import nltk
 copula_list = []
 sentences = []
 
+# Getter function that returns part of speech
 def get_pos(token):
   word = token[0]
   pos = token[1]
   return word, pos
 
+# Pretty printing function
 def print_copula(copula_list):
   total = len(copula_list)
 
@@ -31,9 +33,9 @@ def print_copula(copula_list):
   'Present:\t' + str(present) + '/' + str(total) + '\t (' + "{0:.2f}".format(present_per) + '% of total)\n' + \
   'Absent:\t' + str(absent) + '/' + str(total) + '\t (' + "{0:.2f}".format(absent_per) + '% of total)\n'
 
-def copula(user_in):
-  
-  
+
+# Calculate from input
+def copula(user_in):  
 
   # 0: 0 - present, 1 - absent
   # 1: 0 - 'is', 1 - 'are'
@@ -107,6 +109,8 @@ def copula(user_in):
       
     except IndexError:
       pass
+  # Some debugging 
+
   # print tagged
   # print "Copula presence: " + str(copula) + " | Copula absence: " + str(copula_null)
   sentences.append(tagged)
@@ -114,11 +118,13 @@ def copula(user_in):
 
   #print_copula(copula_list)
 
+# Print array
 def pretty_print(arr):
   for i in arr:
     print i
   print ''
 
+# Driver, get input from user
 def main():
   cont = True
 
@@ -130,13 +136,7 @@ def main():
     if (ask.upper() == "N"):
       cont = False
     else:
-      clear = raw_input("Clear? (Y/N) ")
-      if (clear.upper() == "Y"):
-
-        copula_list = []
-        sentences = []
-        print copula_list, sentences
-      else: continue
+      continue
 
   print "Done!"
 
