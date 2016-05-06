@@ -1,0 +1,23 @@
+<!doctype html>
+<head>
+	<link rel="stylesheet" href="../static/base.css">
+</head>
+<body>
+<h1>COPULA ABSENCE CALCULATOR</h1>
+
+{% if input %}
+  <h3>Received: </h3>
+  <p>{{ input|safe }}!</p>
+{% else %}
+  <p>Thanks for submitting!!</p>
+{% endif %}
+
+{% if sentences %}
+	<p>{{ sentences }}</p>
+{% endif %}
+
+<form method="GET">
+<input type="submit" value="BACK"></input>
+</form>
+</body>
+</html>

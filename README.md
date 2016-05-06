@@ -2,6 +2,10 @@
 ### Copula presence/absence counter
 African American English (Spring 2016), Professor Renée Blake
 
+Implemented in python using the nltk library
+
+Coming soon: Hosted as a Flask app on heroku
+
 ### Background
 Copula absence is a grammatical feature of African American English, denoted by absence of 'is' or 'are'. This feature is systematic and rule-governed: some copula forms can not be left out, and the absences that do occur are distributed in frequencies that are context-dependent.
 

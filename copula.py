@@ -33,9 +33,13 @@ def print_copula(copula_list):
   'Present:\t' + str(present) + '/' + str(total) + '\t (' + "{0:.2f}".format(present_per) + '% of total)\n' + \
   'Absent:\t' + str(absent) + '/' + str(total) + '\t (' + "{0:.2f}".format(absent_per) + '% of total)\n'
 
+  output_string =  '\nTotal copula spaces: ' + str(total) + '\n' + 'Present:\t' + str(present) + '/' + str(total) + '\t (' + "{0:.2f}".format(present_per) + '% of total)\n' + 'Absent:\t' + str(absent) + '/' + str(total) + '\t (' + "{0:.2f}".format(absent_per) + '% of total)'
+
+  return output_string
 
 # Calculate from input
-def copula(user_in):  
+def copulaCalc(user_in):  
+  printMe = ''
 
   # 0: 0 - present, 1 - absent
   # 1: 0 - 'is', 1 - 'are'
@@ -91,7 +95,7 @@ def copula(user_in):
             copula[0] = 1
 
         copula_list.append(copula)
-        print_copula(copula_list)
+        printMe = print_copula(copula_list)
 
       
       # Following a NOUN (less likely) 
@@ -104,7 +108,7 @@ def copula(user_in):
           else:
             copula[0] = 1
         copula_list.append(copula)
-        print_copula(copula_list)
+        printMe = print_copula(copula_list)
 
       
     except IndexError:
@@ -115,8 +119,18 @@ def copula(user_in):
   # print "Copula presence: " + str(copula) + " | Copula absence: " + str(copula_null)
   sentences.append(tagged)
   pretty_print(sentences)
+  return printMe
 
   #print_copula(copula_list)
+
+def print_sentences(user_in):
+  printSent = []
+  for i in sentences:
+    printSent.append(i)
+    printSent.append('\n')
+
+  return printSent
+
 
 # Print array
 def pretty_print(arr):
@@ -124,13 +138,14 @@ def pretty_print(arr):
     print i
   print ''
 
+'''
 # Driver, get input from user
 def main():
   cont = True
 
   while (cont):
     user_in = raw_input("Enter sentence: ")
-    copula(user_in)
+    copulaCalc(user_in)
 
     ask = raw_input("Continue? (Y/N) ")
     if (ask.upper() == "N"):
@@ -141,3 +156,4 @@ def main():
   print "Done!"
 
 main()
+'''
