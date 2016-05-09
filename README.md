@@ -58,9 +58,6 @@ $ sudo pip install -r requirements.txt
 ### SHOW ME SCREENSHOTS
 
 ![Screenshot](/images/1.png?raw=true "Screenshot")
-
-![Screenshot](/images/2.png?raw=true =518x "Screenshot")
-
-![Screenshot](/images/3.png?raw=true =518x "Screenshot")
-
-![Screenshot](/images/4.png?raw=true =518x "Screenshot")
+<img src="/images/2.png?raw=true" width="518">
+<img src="/images/3.png?raw=true" width="518">
+<img src="/images/4.png?raw=true" width="518">
