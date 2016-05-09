@@ -1,13 +1,5 @@
 Flask==0.10.1
-Jinja2==2.8
-joblib==0.9.3
-librosa==0.4.1
-macholib==1.5.1
-MarkupSafe==0.23
 nltk==3.0.5
-numpy==1.8.0rc1
-scikit-learn==0.17
-scipy==0.13.0b1
 virtualenv==15.0.1
 virtualenv-clone==0.2.6
 virtualenvwrapper==4.7.1
