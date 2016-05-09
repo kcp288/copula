@@ -9,7 +9,6 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST', 'DELETE'])
 
 def hello():
-	print request.form.getlist('check')
 	if request.method == 'POST':
 		if (request.form['copula-input']):
 
