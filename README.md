@@ -39,7 +39,7 @@ Copula absence is a grammatical feature of African American English, denoted by 
 
 Based on *Rickford & Rickford, Chapter 7 (2000)*.
 
-### LOCAL INSTALLATION
+### Local installation
 - Install xcode (development tools from Apple) and download Python from https://www.python.org/downloads/
 - Open Terminal app
 - Click "Download ZIP" in this repo
@@ -55,7 +55,7 @@ $ sudo pip install -r requirements.txt
 ```
 - Now, go to your browser and type 'http://0.0.0.0:5000/' into the navigation bar. You should see the Copula Calculator!
 
-### SHOW ME SCREENSHOTS
+### Show me!
 
 ![Screenshot](/images/1.png?raw=true "Screenshot")
 <img src="/images/2.png?raw=true" width="518">
