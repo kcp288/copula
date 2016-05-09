@@ -57,7 +57,7 @@ $ sudo pip install -r requirements.txt
 
 ### SHOW ME SCREENSHOTS
 
-![Screenshot](https://github.com/kcp288/copula/images/1.png "Logo Title Text 1")
+![Screenshot](/images/1.png?raw=true "Screenshot")
 ![Screenshot](https://github.com/kcp288/copula/images/2.png "Logo Title Text 1")
 ![Screenshot](https://github.com/kcp288/copula/images/3.png "Logo Title Text 1")
 ![Screenshot](https://github.com/kcp288/copula/images/4.png "Logo Title Text 1")
