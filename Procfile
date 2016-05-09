@@ -1,1 +1,1 @@
-web: python copula/hello.py
+web: python hello.py
