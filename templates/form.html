@@ -3,16 +3,27 @@
 	<link rel="stylesheet" href="../static/base.css">
 </head>
 <body>
-<h1>COPULA ABSENCE CALCULATOR</h1>
+<section class="parent">
+
+<h1>COPULA CALCULATOR</h1>
 
 {% if input %}
   <h3>Error with input!</h3>
 {% endif %}
 
 
-<form method="POST">
+<form method="POST" style="margin-bottom:50px">
 	<input type="text" label="Text goes here" name="copula-input"></input>
 	<input type="submit" value="Calculate"></input>
 </form>
+
+
+<p class="emph" style="font-size:.9em;color:#999">Try a sentence like "People are crazy" or "He gonna stay."</p>
+</section>
+
+<footer>
+<a href="/">Calculator</a> &emsp; <a href="/about">About</a> &emsp; <a href="https://github.com/kcp288/copula">Github</a>
+</footer>
+
 </body>
 </html>

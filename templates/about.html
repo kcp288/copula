@@ -1,0 +1,81 @@
+<!doctype html>
+<head>
+	<link rel="stylesheet" href="../static/base.css">
+</head>
+<body>
+
+<h1 style="margin-top:120px">COPULA CALCULATOR</h1>
+
+<p class="emph">
+This site is the final project for African American English, taught at New York University in Spring 2016 by Professor Renée Blake. 
+</p>
+
+<h3> Background</h3>
+<p>
+Copula absence is a grammatical feature of African American English, denoted by absence of 'is' or 'are'. This feature is systematic and rule-governed: some copula forms can not be left out, and the absences that do occur are distributed in frequencies that are context-dependent.
+</p>
+
+<h3> Copula deletion features </h3>
+
+<p class="emph">Absence</p>
+
+<p>Copula forms</p>
+<ul>
+  <li>'are' and 'is' ("We (are) inside.") </li>
+  <ul><li>Absence of 'are' is more common than 'is'</li></ul>
+</ul>
+<p>Absence can occur after</p>
+<ul>
+  <li>Pronoun ("he", "she", "they", "we")</li>
+  <li>Noun ("Daniel", "people")</li>
+  <li>Absence after Pronoun is more common than after Noun</li>
+</ul>
+<p>Absence can occur before</p>
+<ul>
+  <li>Most common absence occurs before present progressive of 'to go': 'gonna', 'going to', 'gon' ("She (is) gonna be here soon.")</li>
+  <li>Adjective ("People (are) crazy.")</li>
+  <li>Noun ("She (is) a writer.")</li>
+  <li>Gerund: verb ending in -ing ("He (is) walking.")</li>
+  <li>Locative: any preposition ("They (are) in the store.")</li>
+  <li>Frequency is as follows (most to least likely): 'Gonna' > verb + ing > Adjective/Locative > Noun</li>
+</ul>
+
+<br>
+<p class="emph">Obligatory Presence</p>
+<ul>
+<li>First person singular 'am' ("I _am_ walking.")</li>
+<li>Past tense 'was' and 'were' ("She _was_ inside.")</li>
+<li>Sentence-final ("I know that she _is_.")</li>
+<li>Emphasized ("He _IS_ a teacher.")</li>
+<li>Contracted 's ("She_'s_ happy.")</li>
+<li>Contracted form ain't ("He _ain't_ allowed.")</li>
+<li>Infinitive be ("She can _be_ a famous.")</li>
+</ul>
+
+<br>
+Based on Rickford &amp; Rickford, Chapter 7 (2000).
+<h3> Technical Details </h3>
+<p>
+  This project is built using the Flask web framework. The backend of the calculator is a Python script which uses the <a href="http://www.nltk.org/">Natural Language Toolkit</a> library for part of speech tagging. 
+</p>
+<p>
+  Tested the algorithm using text from The Piano Lesson by August Wilson. For test sentences and full text, check out the <a href="/example">example text</a>.
+</p>
+<h3> Algorithm Details </h3>
+<p>
+  How do we calculate copula presence in Copula Calculator version 1.0?
+</p>
+<ol>
+  <li>Get user input and tag all the parts of speech with NLTK library.</li>
+  <li>Eliminate impossible cases: end of sentence, or first person.</li>
+  <li>Looping through the sentence, check if word is a pronoun or noun. If so, check part of speech of the following word.</li>
+  <li>If the next word is a copula ("is," "are"), increment copula presence count.</li>
+  <li>Else, increment copula absence count.</li>
+  <li>Pass counts to the printer, which displays total tally to the front end!</li>
+</ol>
+<footer>
+<a href="/">Calculator</a> &emsp; <a href="/about">About</a> &emsp; <a href="https://github.com/kcp288/copula">Github</a>
+</footer>
+
+</body>
+</html>

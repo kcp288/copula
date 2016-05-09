@@ -1,0 +1,35 @@
+
+<p> The sample text used for testing the algorithm was taken from "The Piano Lesson" by August Wilson.
+<ul>
+	<li>I'm ready.</li>
+	<li>Get a real good grip on it now.</li>
+	<li>I got this end. You get that end. </li>
+	<li>Wait till I say ready now. Alright. You got it good? You got a grip on it</li>
+	<li>Yeah, I got it. You lift up on that end.</li>
+	<li>Ready? Lift.</li>
+	<li>Man, this piano is heavy. It's gonna take more than me and you to move this piano. </li>
+	<li>We can do it. Come on - we did it before.</li>
+	<li>Nigger - you crazy! That piano weighs five hundred pounds!</li>
+	<li>I got three hundred points of it! I know you can carry two hundred pounds! You be lifting them cotton sacks! Come on lift this piano!</li>
+	<li>It's stuck. Something holding it. </li>
+	<li>How the piano gonna be stuck? We just moved it. Slide you end out.</li>
+	<li>Naw - we gonna need two or three more people. How this big old piano get in the house?</li>
+	<li>I don't know how it got in the house. I know how it's going out though! You get on this end. I'll carry three hundred and fifty pounds of it. All you got to do is slide your end out. Ready?</li>
+	<li>Hey, Doaker...how this piano get in the house?</li>
+	<li>Boy Willie, what you doing?</li>
+	<li>I'm carrying this piano out the house. What it look like I'm doing? Come on, Lymon, let's try again. </li>
+	<li>Go on let the piano sit there till Berniece come home.</li>
+	<li>You ain't got nothing to do with this, Doaker. This my business. </li>
+	<li>This is my house, nigger! I ain't gonna let you or nobody else carry nothing out of it. You ain't gonna cary nothing out of here without my permission!</li>
+	<li>This is my piano. I don't need your permission to carry my belongings out of your house. This is mine. This ain't got nothing to do with you. </li>
+	<li>I say leave it over there till Berniece come home. She got part of it too. Leave it set there till you see what she say.</li>
+	<li>I don't care what Berniece say. Come on, Lymon. I got this side.</li>
+	<li>Go on and cut it half in two if you want to. Just leave Berniece's half sitting over there. I can't tell you what to do with your piano. But I can't let you take her half out of here.</li>
+	<li>Go on, Doaker. You ain't got nothing to do with this. I don't want you starting nothing now. Just go on and leave me alone. Come on, Lymon. I got this end.</li>
+	<li>How we gonna get it in the truck? </li>
+	<li>Don't worry about how we gonna get it on the truck. You got to get it out the house first. </li>
+	<li>It's gonna take more than me and you to move this piano. </li>
+	<li>Just lift up on that end, nigger!</li>
+</ul>
+
+<p>Wilson, August. The Piano Lesson. New York, NY, U.S.A.: Plume, 1990. Print.</p>

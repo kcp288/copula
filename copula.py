@@ -2,6 +2,7 @@ import nltk
 
 copula_list = []
 sentences = []
+all_input = []
 
 # Getter function that returns part of speech
 def get_pos(token):
@@ -40,7 +41,7 @@ def print_copula(copula_list):
 # Calculate from input
 def copulaCalc(user_in):  
   printMe = ''
-
+  all_input.append(user_in)
   # 0: 0 - present, 1 - absent
   # 1: 0 - 'is', 1 - 'are'
   # 2: 0 - after 'PRP', 1 - after NOUN
@@ -124,12 +125,19 @@ def copulaCalc(user_in):
   #print_copula(copula_list)
 
 def print_sentences(user_in):
-  printSent = []
-  for i in sentences:
-    printSent.append(i)
-    printSent.append('\n')
+  print_input = ''
+  for i in all_input:
+    print_input = print_input + str(i) + '\n'
 
-  return printSent
+
+  return print_input
+
+def clearSentences():
+  print sentences
+  sentences = []
+  print "cleared?"
+  print sentences
+  return sentences
 
 
 # Print array

@@ -5,9 +5,10 @@ import copula
 
 app = Flask(__name__)
 
-@app.route('/hello', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST', 'DELETE'])
 
 def hello():
+	print request.form.getlist('check')
 	if request.method == 'POST':
 		if (request.form['copula-input']):
 
@@ -18,18 +19,27 @@ def hello():
 			printMe = printMe.replace('\n', '<br />')
 
 			get_sentences = copula.print_sentences(copulaform)
-			print "Sentences"
-			print get_sentences
-			print printMe
+			get_sentences = get_sentences.replace('\n', '<br />')
 
 		else:
+			print request.args
+			print request.args[0]
 			return render_template('form.html', error=error)
 
+
 		return render_template('hello.html', input=printMe, sentences = get_sentences)
+
 	else:
 		return render_template('form.html')
 
 
+@app.route('/about')
+def about():
+	return render_template('about.html')
+
+@app.route('/example')
+def example():
+	return render_template('example.html')
 
 if __name__ == '__main__':
 	app.run(debug=True)
