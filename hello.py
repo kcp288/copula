@@ -23,8 +23,6 @@ def hello():
 			get_sentences = get_sentences.replace('\n', '<br />')
 
 		else:
-			print request.args
-			print request.args[0]
 			return render_template('form.html', error=error)
 
 

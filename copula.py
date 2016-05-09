@@ -30,9 +30,6 @@ def print_copula(copula_list):
   present_per = float(present)/total * 100
   absent_per = float(absent)/total * 100
 
-  print '\nTotal copula spaces:\t' + str(total) + '\n' + \
-  'Present:\t' + str(present) + '/' + str(total) + '\t (' + "{0:.2f}".format(present_per) + '% of total)\n' + \
-  'Absent:\t' + str(absent) + '/' + str(total) + '\t (' + "{0:.2f}".format(absent_per) + '% of total)\n'
 
   output_string =  '\nTotal copula spaces: ' + str(total) + '\n' + 'Present:\t' + str(present) + '/' + str(total) + '\t (' + "{0:.2f}".format(present_per) + '% of total)\n' + 'Absent:\t' + str(absent) + '/' + str(total) + '\t (' + "{0:.2f}".format(absent_per) + '% of total)'
 
@@ -77,7 +74,6 @@ def copulaCalc(user_in):
           next = tagged[i+1]
           next_word = next[0]
           if next_word == 'AM': 
-            print "First person"
             break
         except IndexError:
           pass
@@ -133,10 +129,7 @@ def print_sentences(user_in):
   return print_input
 
 def clearSentences():
-  print sentences
   sentences = []
-  print "cleared?"
-  print sentences
   return sentences
 
 
