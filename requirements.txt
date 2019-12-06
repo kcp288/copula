@@ -1,5 +1,5 @@
 Flask==0.10.1
-nltk==3.0.5
+nltk==3.4.5
 virtualenv==15.0.1
 virtualenv-clone==0.2.6
 virtualenvwrapper==4.7.1
