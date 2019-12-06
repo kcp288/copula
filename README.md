@@ -1,6 +1,6 @@
 # AAE final project
 ### Copula presence/absence counter
-African American English (Spring 2016), Professor Renée Blake
+African American English, Professor Renée Blake
 
 Implemented in python using the nltk library
 
